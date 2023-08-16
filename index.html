@@ -5,84 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom's Jazz School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@500&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <img src="img/logo.svg" alt="rom's Jazz School">
-        <nav>
+        <img src="img/logo.svg" alt="Tom's Jazz School">
+        <nav class="mt-1 mx-auto">
             <a href="#">Início</a>
             <a href="#">Cursos</a>
             <a href="#">Eventos</a>
             <a href="#">Contato</a>
         </nav>
-        <a href="#" class="button">Se inscreva</a>
+        <a href="#" class="button  mt-1 mx-auto">Se inscreva</a>
     </header>
     <main>
-        <section>
-            <img src="img/hero-img.svg" alt="banda de jazz tocando">
+        <section class="hero-section">
+            <img src="./img/hero-img.svg" alt="banda de jazz tocando">
             <div>
-                <h1>Crie algo <span>impactante</span> com música</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis expedita porro reiciendis.
+                <h1 class="mt-2">Crie algo <span class="text-primary decoration">impactante</span> com música</h1>
+                <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis expedita porro reiciendis.
                     Ratione, soluta id perferendis aspernatur quam, asperiores dolor veritatis velit tempore
                     perspiciatis distinctio deleniti, molestias consectetur hic.</p>
                 <a href="#" class="button">Comece agora</a>
             </div>
         </section>
-        <div class="cards">
-            <section>
-                <article>
-                    <img src="img/piano.png" alt="ícone de teclas de piano">
+        <section class="courses-section">
+            <div class="cards">
+                <article class="card">
+                    <img src="./img/piano.png" alt="ícone de teclas de piano">
                     <strong>Piano popular</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil eos deserunt</p>
                     <a href="#">
                         <img src="img/arrow-right.svg" alt="ir para a página do curso">
                     </a>
                 </article>
-                <article>
-                    <img src="img/clef.png" alt="ícone de teclas da clave de sol">
+                <article class="card">
+                    <img src="./img/clef.png" alt="ícone de teclas da clave de sol">
                     <strong>Teoria musical</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil eos deserunt</p>
                     <a href="#">
-                        <img src="img/arrow-right.svg" alt="ir para a página do curso">
+                        <img src="./img/arrow-right.svg" alt="ir para a página do curso">
                     </a>
                 </article>
-                <article>
-                    <img src="img/sax.png" alt="ícone de saxofne">
+                <article class="card">
+                    <img src="./img/sax.png" alt="ícone de saxofne">
                     <strong>Sax alto</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil eos deserunt</p>
                     <a href="#">
-                        <img src="img/arrow-right.svg" alt="ir para a página do curso">
+                        <img src="./img/arrow-right.svg" alt="ir para a página do curso">
                     </a>
                 </article>
-                <article>
-                    <img src="img/drums.png" alt="ícone de bateria">
+                <article class="card">
+                    <img src="./img/drums.png" alt="ícone de bateria">
                     <strong>bateria</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil eos deserunt</p>
                     <a href="#">
-                        <img src="img/arrow-right.svg" alt="ir para a página do curso">
+                        <img src="./img/arrow-right.svg" alt="ir para a página do curso">
                     </a>
                 </article>
-        </div>
-        <h2> E <span>varios</span> outros!</h2>
-        <a href="#"> conhecer os cursos</a>
+            </div>
+            <h2 class="text-center"> E <span class="text-primary ">varios</span> outros!</h2>
+            <a class="button mt-2 mx-auto" href="#"> conhecer os cursos</a>
         </section>
     </main>
     <footer>
         <div>
-            <img src="img/logo.svg" alt=" Tom's Jazz School">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque? Illum vero atque voluptates ipsa.
+            <img src="./img/logo.svg" alt=" Tom's Jazz School" class="mt-1 mb-1">
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque? Illum vero atque voluptates ipsa.
             <p>
         </div>
-        <nav> 
+        <nav class="mb-2">
             <a href="#">Início</a>
             <a href="#">Cursos</a>
             <a href="#">Eventos</a>
             <a href="#">Contato</a>
         </nav>
-        <form>
-            <label for="email">Receba materiais gratuitos no seu email</label>
-            <input type="text" name="email" id="email" placeholder="digite seu email aqui">
+        <form class="newsletter-form">
+            <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+            <input type="text" name="email" id="email" class="mb-1" placeholder="digite seu email aqui">
+            <button class="button mb-2"> quero receber</button>
         </form>
     </footer>
 </body>
