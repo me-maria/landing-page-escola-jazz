@@ -33,6 +33,7 @@ header img{
 header nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin:1rem auto 0;
 }
 nav a {
     color: var(--color-black);
@@ -55,6 +56,7 @@ header nav a:nth-child(2n-1){
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .hero-section{
     padding-right: 0;
@@ -116,7 +118,8 @@ h2{
     border: 2px solid var(--color-black);
     box-shadow: 4px 4px 0 var(--color-black);
     max-width: 17rem;
-    padding:2rem 0 0 2rem
+    padding:2rem 0 0 2rem;
+    cursor: pointer;
 }
 
 .card:nth-child(2n){
@@ -153,6 +156,7 @@ footer nav a {
     font-size: 1.5rem;
     padding: .5rem;
     width: 100% ;
+    
 }
 /*Utilitários*/
 
@@ -178,4 +182,69 @@ footer nav a {
 }
 .text-center{
     text-align: center;
+}
+
+/*Responsividade*/
+@media screen and (min-width: 40rem) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+    
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card:nth-child(2n) {
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width:48rem){
+    header div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header img, 
+    header nav,
+    header .button{
+        margin:0;
+    }
+}
+
+@media screen and (min-width:72rem){
+    h1, h2{
+        font-size: 4rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+     .container.row-reverse{
+        flex-direction: row-reverse;
+    }
+    .about-column{
+        flex:2;
+    }
+    .about-column p{
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+    footer nav{
+        flex: 1;
+    }
+    .newsletter-form{
+        flex:3;
+    }
+}
+
+@media screen and (min-width:90rem){
+    .container{
+        max-width: 80rem;
+    }
 }
